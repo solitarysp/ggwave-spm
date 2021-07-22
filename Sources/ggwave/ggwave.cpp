@@ -25,6 +25,10 @@ ggwave_Parameters ggwave_getDefaultParameters(void) {
 }
 
 extern "C"
+ggwave_Parameters ggwave_getDefaultParameters2(void) {
+    return GGWave::getDefaultParameters();
+}
+extern "C"
 ggwave_Instance ggwave_init(const ggwave_Parameters parameters) {
     static ggwave_Instance curId = 0;
 
