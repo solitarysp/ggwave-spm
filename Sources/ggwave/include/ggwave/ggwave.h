@@ -80,7 +80,7 @@ extern "C" {
 
     // Helper method to get default instance parameters
     GGWAVE_API ggwave_Parameters ggwave_getDefaultParameters(void);
-
+  GGWAVE_API ggwave_Parameters ggwave_getDefaultParameters2(void);
     // Create a new GGWave instance with the specified parameters
     //
     //   The newly created instance is added to the internal map container.
