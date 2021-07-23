@@ -250,8 +250,8 @@ public:
 
     using TxProtocols = std::map<TxProtocolId, TxProtocol>;
 
-    static const TxProtocols & getTxProtocols() {
-        static const TxProtocols kTxProtocols {
+    static TxProtocols & getTxProtocols() {
+        static TxProtocols kTxProtocols {
             { GGWAVE_TX_PROTOCOL_AUDIBLE_NORMAL,        { "Normal",       40,  9, 3, } },
             { GGWAVE_TX_PROTOCOL_AUDIBLE_FAST,          { "Fast",         40,  6, 3, } },
             { GGWAVE_TX_PROTOCOL_AUDIBLE_FASTEST,       { "Fastest",      40,  3, 3, } },
