@@ -26,8 +26,9 @@ ggwave_Parameters ggwave_getDefaultParameters(void) {
 
 extern "C"
 ggwave_Parameters ggwave_getDefaultParameters2(void) {
-    getTxProtocols().clear();
-    getTxProtocols().insert({GGWAVE_TX_PROTOCOL_CUSTOM_0, (TxProtocol) { "Normal",       2000,  6, 3, }});
+    GGWave::getTxProtocols().clear();
+    GGWave::getTxProtocols().insert({ggwave_TxProtocolId::GGWAVE_TX_PROTOCOL_CUSTOM_0, (GGWave::TxProtocol) { "Normal",       freqStart,  framesPerTx, bytesPerTx, }});
+
 
     return GGWave::getDefaultParameters();
 }
