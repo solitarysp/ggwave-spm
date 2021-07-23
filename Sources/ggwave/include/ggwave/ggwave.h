@@ -44,6 +44,7 @@ extern "C" {
         GGWAVE_TX_PROTOCOL_DT_NORMAL,
         GGWAVE_TX_PROTOCOL_DT_FAST,
         GGWAVE_TX_PROTOCOL_DT_FASTEST,
+        GGWAVE_TX_PROTOCOL_CUSTOM_0,
     } ggwave_TxProtocolId;
 
     // GGWave instance parameters
